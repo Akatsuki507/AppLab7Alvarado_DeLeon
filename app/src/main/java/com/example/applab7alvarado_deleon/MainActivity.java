@@ -16,22 +16,18 @@ public class MainActivity extends base {
         user.setCedula("8-888-88");
         user.setEdad(22);
         user.setPassword("12345");
-        if(NewUser(user)){
-            Log.e("TAG", "INSERT EXITOSO");
-            Log.e("TAG", "INSERT EXITOSO");
-            Log.e("TAG", "INSERT EXITOSO");
-            Log.e("TAG", "INSERT EXITOSO");
-
+        if(VerifyUser("8-888-88", "12345")){
+            Log.e("TAG", "LOG IN EXITOSO");
+            Log.e("TAG", "LOG IN EXITOSO");
+            Log.e("TAG", "LOG IN EXITOSO");
+            Log.e("TAG", "LOG IN EXITOSO");
+            Log.e("TAG", "LOG IN EXITOSO");
         }else{
-            Log.e("TAG", "INSERT FAIL");
-            Log.e("TAG", "INSERT FAIL");
-            Log.e("TAG", "INSERT FAIL");
-            Log.e("TAG", "INSERT FAIL");
-            Log.e("TAG", "INSERT FAIL");
+            Log.e("TAG", "LOG IN FAIL");
+            Log.e("TAG", "LOG IN FAIL");
+            Log.e("TAG", "LOG IN FAIL");
+            Log.e("TAG", "LOG IN FAIL");
 
         }
-
-        User db_user = searchUser("8-888-88");
-        Log.e("TAG", "Nombre = "+ db_user.nombre);
     }
 }
